@@ -10,53 +10,92 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        @import url(mystyle.css);
+    </style>
 </head>
 
 <body>
-    <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
-    <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="aaa">
+        <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+        <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <!-- .navbar-brand 左上LOGO位置 -->
-        <a class="navbar-brand" href="index.html">
-            <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            <span class="h3 mx-1">NPUST MIS 28TH</span>
-        </a>
-        <!-- .navbar-toggler 漢堡式選單按鈕 -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- .navbar-brand 左上LOGO位置 -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span class="h3 mx-1">NPUST MIS 28TH</span>
+            </a>
+            <!-- .navbar-toggler 漢堡式選單按鈕 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <!-- .navbar-toggler-icon 漢堡式選單Icon -->
       <span class="navbar-toggler-icon"></span>
     </button>
 
-        <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
-        <!-- 選單項目&漢堡式折疊選單 -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <!-- active表示當前頁面 -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="/index.html">首頁<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about.html">關於</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/people.html">成員</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/thing.html">活動</a>
-                </li>
+            <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+            <!-- 選單項目&漢堡式折疊選單 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- active表示當前頁面 -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/people.html">成員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/thing.html">活動</a>
+                    </li>
 
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
         </button>
-            </form>
+                </form>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <main>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%" /><text fill="#555" dy=".3em" x="50%" y="50%">First slide</text></svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect fill="#666" width="100%" height="100%" /><text fill="#444" dy=".3em" x="50%" y="50%">Second slide</text></svg>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect fill="#555" width="100%" height="100%" /><text fill="#333" dy=".3em" x="50%" y="50%">Third slide</text></svg>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
-
-    </nav>
-
+    </main>
+    <div>2312</div>
 </body>
 
 </html>
