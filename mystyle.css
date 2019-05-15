@@ -14,3 +14,38 @@
     margin-right: 20px;
     line-height: 20px;
 }
+
+.footera:link {
+    color: aliceblue;
+}
+
+.footer:hover {
+    color: gray;
+    background-color: aliceblue;
+}
+
+.footer:visited {
+    color: aliceblue;
+}
+
+footer {
+    height: 80px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footercolor {
+    color: aliceblue;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.f {
+    text-align: center;
+}
+
+.g {
+    padding: 100px;
+}
